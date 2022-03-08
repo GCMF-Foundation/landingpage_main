@@ -1,0 +1,143 @@
+.main-item-img {
+    position: relative;
+    height: 500px;
+    padding: 55px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.left-slick-item {
+    border-radius: 20px 0 0 0;
+}
+
+.right-slick-item {
+    border-radius: 0 20px 0 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.main-item-img:hover .overlay {
+    opacity: 0.2;
+}
+
+.main-item-img h2 {
+    color: #fff;
+    font-family: poppins;
+    z-index: 2;
+    margin: 0;
+}
+
+.main-item-img .item-logo-slick-kab-s {
+    width: 180px;
+    height: 200px;
+    z-index: 2;
+    transition: .5s ease;
+    margin: 3rem 0;
+}
+
+.main-item-img .item-logo-slick-kab {
+    width: 150px;
+    height: 200px;
+    z-index: 2;
+    transition: .5s ease;
+    margin: 3rem 0;
+}
+
+.main-item-img:hover .item-logo-slick-kab {
+    transform: scale(1.1);
+}
+
+.main-item-img:hover .item-logo-slick-kab-s {
+    transform: scale(1.1);
+}
+
+.main-item-img:hover .item-logo {
+    transform: scale(1.1);
+}
+
+.main-item-img p {
+    text-transform: uppercase;
+    font-family: pink-chicken;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 2;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+
+@media (max-width: 991px) {
+    .main-item-img {
+        height: 400px;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .main-item-img h2 {
+        font-size: 26px;
+    }
+
+    .main-item-img p {
+        font-weight: 600;
+    }
+
+    .item-logo-slick-kab-s, .item-logo-slick-kab {
+        margin: 2rem !important;
+    }
+
+    .item-logo-slick-kab {
+        width: 130px !important;
+        height: 170px !important;
+    }
+
+    .item-logo-slick-kab-s {
+        width: 150px !important;
+        height: 170px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-item-img {
+        height: 250px;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .main-item-img h2 {
+        font-size: 16px;
+    }
+
+    .main-item-img .item-logo-slick-kab-s {
+        width: 75px !important;
+        height: 80px !important;
+    }
+
+    .main-item-img p {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .item-logo-slick-kab {
+        width: 70px !important;
+        height: 90px !important;
+    }
+
+    .item-logo-slick-kab-s, .item-logo-slick-kab {
+        margin: 1.5rem !important;
+    }
+}

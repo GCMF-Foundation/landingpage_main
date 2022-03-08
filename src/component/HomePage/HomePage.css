@@ -1,0 +1,28 @@
+.main-container {
+    margin: 0;
+    padding: 80px 100px;
+    background: url(../../assets/img/main-bg.png);
+}
+
+.main-web-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.main-item {
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .main-container {
+        padding: 80px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 80px 30px;
+    }
+}
+
